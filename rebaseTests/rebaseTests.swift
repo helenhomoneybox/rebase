@@ -27,5 +27,17 @@ struct rebaseTests {
         let result = calculator.multiply(4, by: 3)
         #expect(result == 12)
     }
-
+    
+    @Test func testDivision() async throws {
+        let calculator = Calculator()
+        let result = try calculator.divide(10, by: 2)
+        #expect(result == 5)
+    }
+    
+    @Test func testDivisionByZero() async throws {
+        let calculator = Calculator()
+        #expect(throws: CalculatorError.divisionByZero) {
+            try calculator.divide(10, by: 0)
+        }
+    }
 }
