@@ -17,5 +17,9 @@ public struct Calculator {
     public func subtract(_ a: Double, _ b: Double) -> Double {
         return a - b
     }
+    
+    public func multiply(_ a: Double, by b: Double) -> Double {
+        return a * b
+    }
 }
 
