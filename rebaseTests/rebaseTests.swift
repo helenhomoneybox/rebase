@@ -15,5 +15,11 @@ struct rebaseTests {
         let result = calculator.add(2, 3)
         #expect(result == 5)
     }
+    
+    @Test func testSubtraction() async throws {
+        let calculator = Calculator()
+        let result = calculator.subtract(5, 3)
+        #expect(result == 2)
+    }
 
 }
