@@ -10,8 +10,10 @@ import Testing
 
 struct rebaseTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    @Test func testAddition() async throws {
+        let calculator = Calculator()
+        let result = calculator.add(2, 3)
+        #expect(result == 5)
     }
 
 }

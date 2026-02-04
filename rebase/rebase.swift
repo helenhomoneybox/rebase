@@ -9,5 +9,9 @@ import Foundation
 
 public struct Calculator {
     public init() {}
+    
+    public func add(_ a: Double, _ b: Double) -> Double {
+        return a + b
+    }
 }
 
